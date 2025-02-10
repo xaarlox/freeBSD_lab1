@@ -7,11 +7,13 @@
 ![image](https://github.com/user-attachments/assets/d3e55c91-ec13-429b-94f1-848aee110e3a)
 ## Реалізація завдання
 ### Функція для друку роздільної лінії
-````````void print_separator(int *col_widths, int col_count) {
+````````
+void print_separator(int *col_widths, int col_count) {
     printf("+");
     for (int i = 0; i < col_count; i++) {
         for (int j = 0; j < col_widths[i] + 2; j++) printf("-");
         printf("+");
     }
     printf("\n");
-}````````
+}
+````````
