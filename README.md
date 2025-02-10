@@ -5,3 +5,13 @@
 Спочатку я вирішила встановити середовище робочого столу, щоб забезпечити комфортну роботу з системою. Для цього я скористалася [відео](https://www.youtube.com/watch?v=mWUL7hhg-vs&ab_channel=FreeBSDFoundation), автор якого надав покрокову інструкцію з налаштування.
 Мій робочий стіл має вигляд:
 ![image](https://github.com/user-attachments/assets/d3e55c91-ec13-429b-94f1-848aee110e3a)
+## Реалізація завдання
+### Функція для друку роздільної лінії
+````````void print_separator(int *col_widths, int col_count) {
+    printf("+");
+    for (int i = 0; i < col_count; i++) {
+        for (int j = 0; j < col_widths[i] + 2; j++) printf("-");
+        printf("+");
+    }
+    printf("\n");
+}````````
